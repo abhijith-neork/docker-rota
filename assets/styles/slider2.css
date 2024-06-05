@@ -1,0 +1,320 @@
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
+	outline: none;
+}
+.slides, .flex-control-nav, .flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.flexslider a img {
+	outline: none;
+	border: none;
+}
+.flexslider {
+	margin: 0;
+	padding: 0;
+}
+.flexslider .slides > li {
+	display: none;
+	-webkit-backface-visibility: hidden;
+}
+.flexslider .slides img {
+	width: 100%;
+	display: block;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+@media(min-width:200px) and (max-width:530px) {
+	.flexslider .slides img {
+		width: 100%;
+	}
+}
+.slides:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.flexslider {
+	position: relative;
+	zoom: 1;
+}
+.flex-container {
+	min-width: 150px;
+	max-width: 960px;
+}
+.flexslider .slides {
+	zoom: 1;
+}
+.flex-direction-nav a {
+	display: block;
+	position: absolute;
+	margin: -17px 0 0 0;
+	width: 35px;
+	height: 35px;
+	top: 50%;
+	cursor: pointer;
+	text-indent: -9999px;
+	background-color: #82d344;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#82d344), to(#51af34));
+	background-image: -webkit-linear-gradient(top, #82d344, #51af34);
+	background-image: -moz-linear-gradient(top, #82d344, #51af34);
+	background-image: -o-linear-gradient(top, #82d344, #51af34);
+	background-image: linear-gradient(to bottom, #82d344, #51af34);
+}
+.flex-direction-nav a:before {
+	display: block;
+	position: absolute;
+	content: '';
+	width: 9px;
+	height: 13px;
+	top: 11px;
+	left: 11px;
+	background: url(../img/arrows.png) no-repeat;
+}
+.flex-direction-nav a:after {
+	display: block;
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	top: 35px;
+}
+.flex-direction-nav .flex-next {
+	right: 3%;
+	background: url(../images/slider-arrow-right.png) no-repeat left;
+	width: 60px;
+	height: 60px;
+}
+.flex-direction-nav .flex-prev {
+	left:3%;
+	background: url(../images/slider-arrow-left.png) no-repeat left;
+	width: 60px;
+	height: 60px;
+}
+@media(min-width:200px) and (max-width:1200px) {
+	.flex-direction-nav .flex-next {
+		display:none;
+	}
+	.flex-direction-nav .flex-prev {
+		display:none;
+	}
+}
+.flex-direction-nav .flex-next:before {
+	background-position: -9px 0;
+	left: 15px;
+}
+.flex-direction-nav .flex-prev:before {
+	background-position: 0 0;
+}
+.flex-direction-nav .flex-next:after {
+	right: 0;
+}
+.flex-direction-nav .flex-prev:after {
+	left: 0;
+}
+.flexslider .flex-control-nav {
+    position: absolute;
+    width: auto;
+    bottom: 25px;
+    text-align: center;
+    margin: 0 0 0 -10px;
+    right: 30px;
+    left: auto;
+    top: auto;
+    height: auto;
+}
+.flex-control-nav li {
+	display: inline-block;
+	zoom: 1;
+}
+.flex-control-paging {
+	position: absolute;
+	z-index: 9999;
+	top:85%;
+	left:46%;
+	height: 100px;
+	width: 100%;
+}
+@media(min-width:200px) and (max-width:1200px) {
+	.flex-control-paging {
+		display:none;
+	}
+}
+.flex-control-paging li a {
+	display: block;
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 12px;
+	height: 12px;
+	margin-right:5px;
+	margin-left:5px;
+	background:none;
+	border-radius:50%;
+	border: 1px #fff solid;
+}
+.flex-control-paging li a.flex-active {
+	border-radius:50%;
+	background:#fff;
+	width: 12px;
+	height: 12px;
+}
+.flexslider .slides .caption {
+	display: block;
+	position: absolute;
+	left: 100;
+	bottom: 0;
+	padding-left:10%;
+	padding-right:10%;
+	width:100%;
+	float:left;
+	margin: 0;
+	line-height: 50px;
+	line-height: 20px;
+	top:250px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+@media(min-width:500px) and (max-width:1200px) {
+	.flexslider .slides .caption {
+		top:30%;
+	}
+}
+@media(min-width:430px) and (max-width:500px) {
+	.flexslider .slides .caption {
+		top:30%;
+	}
+}
+@media(min-width:200px) and (max-width:1200px) {
+	.flexslider .slides .caption {
+			padding-left:30px;
+			padding-right:30px;
+	}
+}
+.flexslider .slides .caption h1{
+		font-size: 70px;
+	font-family: 'ChronicleDisplay-Roman';
+	color: #000000;
+	font-weight: normal;
+	text-align: left;
+	float: right;
+	line-height:80px;
+	padding:100px 100px 20px 0px;
+}
+.flexslider .slides .caption h3{
+		font-size: 70px;
+	font-family: 'ChronicleDisplay-Roman';
+	color: #fff;
+	font-weight: normal;
+	text-align: left;
+	float: right;
+	line-height:80px;
+	padding:100px 100px 20px 0px;
+}
+@media(min-width:500px) and (max-width:767px) {
+	.flexslider .slides .caption h1{
+		font-size: 40px;
+		line-height: 40px;
+		padding-right: 0px;
+		padding-top: 300px;
+		text-align: center;
+	}
+	.flexslider .slides .caption h3{
+		font-size: 40px;
+		line-height: 40px;
+		padding-right: 0px;
+		padding-top: 300px;
+		text-align: center;
+	}
+}
+@media(min-width:767px) and (max-width:1023px) {
+	.flexslider .slides .caption h1{
+		font-size: 40px;
+		line-height: 40px;
+		padding-right: 0px;
+		padding-top: 50px;
+	}
+	.flexslider .slides .caption h3{
+		font-size: 40px;
+		line-height: 40px;
+		padding-right: 0px;
+		padding-top: 50px;
+		text-align: center;
+	}
+}
+@media(min-width:200px) and (max-width:500px) {
+	.flexslider .slides .caption h1{
+		font-size: 40px;
+		line-height: 40px;
+		padding-right: 0px;
+		padding-top: 300px;
+		text-align: center;
+	}
+	.flexslider .slides .caption h3{
+		font-size: 40px;
+		line-height: 40px;
+		padding-right: 0px;
+		padding-top: 300px;
+		text-align: center;
+	}
+}
+.flexslider .slides .caption h2{
+		font-size: 45px;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
+	float: right;
+	font-weight: normal;
+	width:100%;
+	text-align:center;
+	padding:0px 0px 20px 0px;
+	margin:0px;
+}
+.flexslider .slides .caption p{
+		font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	background:url(../images/caption.png) repeat;
+	color: #f1f1f1;
+	float: right;
+	font-weight: normal;
+	font-style:italic;
+	margin-left:0px;
+	width:580px;
+	line-height:32px;
+	text-align:center;
+	padding:5px;
+}
+.caption-link{
+	margin:auto;
+	display:table;
+}
+.flexslider .slides .caption a{
+		font-size: 14px;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	border:1px #FFFFFF solid;
+	
+	color:#FFF;
+	float:left;
+	margin-top:10px;
+		margin-left:5px;
+	padding:10px 15px 10px 15px;
+	font-weight:normal;
+}
+@media(min-width:200px) and (max-width:600px) {
+	.flexslider .slides .caption a{
+		font-size: 12px;
+	}
+	}
+
+.flexslider .slides .caption a:hover{
+	text-decoration:none;
+	background: #000000;
+	border:1px #000000 solid;
+}
+.flexslider .slides p span{
+	font-size:52px;
+	padding-top:50px;
+}

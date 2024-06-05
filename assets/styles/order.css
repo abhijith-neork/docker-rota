@@ -1,0 +1,25 @@
+.order-iframe {
+    width: 900px;
+    margin: 0 auto;
+}
+.close_btn {
+    position: absolute;
+    width: 70px;
+    background: #211e1e;
+    color: #fff;
+    z-index: 9;
+    top: 2%;
+    right: -56px;
+    font-size: 28px;
+    border-radius: 4px;
+    padding: 4px;
+}
+.close_btn:hover {
+    background-color: rgba(0,0,0,.3);
+}
+.close_btn a{color: #fff;}
+.wrapper {
+    float: left;
+    width: 100%;
+    margin:10px 0px;
+}

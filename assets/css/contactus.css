@@ -1,0 +1,17 @@
+.contactus-wrapper {
+	margin-top: 100px;
+}
+.contactus-wrapper h2 {
+	color: #666666;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+}
+.contactus-wrapper p {
+	color: #666666;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+}

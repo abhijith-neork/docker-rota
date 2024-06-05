@@ -1,0 +1,42 @@
+version: "3.8"
+services: 
+
+    # php service
+    php: 
+        build:
+          context: .
+          target: php
+        working_dir: /var/www/html
+        volumes: 
+            - ./:/var/www/html
+        ports: 
+            - 80:80
+        depends_on: 
+             - database
+        networks:
+             - app-network
+
+
+
+    # database server
+    database: 
+        image: mysql:5.7
+        restart: always
+        ports:
+          - 3306:3306
+        environment:
+            - MYSQL_DATABASE=rotasystem
+            - MYSQL_USER=admin
+            - MYSQL_PASSWORD=admin
+            - MYSQL_ROOT_PASSWORD=root
+        volumes:
+            - db-data:/var/lib/mysql
+        networks:
+             - app-network    
+
+volumes: 
+    db-data: ~
+
+networks:
+  app-network:
+    driver: bridge  

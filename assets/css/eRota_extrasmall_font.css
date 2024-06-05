@@ -1,0 +1,419 @@
+html,
+body {
+    font-size: 14px !important;
+}
+
+
+/*******************
+Headings
+*******************/
+
+h1 {
+    font-size: 34px !important;
+}
+
+h2 {
+    font-size: 22px !important;
+}
+
+h3 {
+    font-size: 19px !important;
+}
+
+h4 {
+    font-size: 16px !important;
+}
+
+h5 {
+    font-size: 14px !important;
+}
+
+h6 {
+    font-size: 12px !important;
+}
+
+.display-5 {
+    font-size: 3rem !important;
+}
+
+.display-6 {
+    font-size: 34px !important;
+}
+
+.display-7 {
+    font-size: 2rem !important;
+}
+
+html body .font-16 {
+    font-size: 14px !important;
+}
+
+html body .font-14 {
+    font-size: 12px !important;
+}
+
+html body .font-18 {
+    font-size: 16px !important;
+}
+
+html body .font-20 {
+    font-size: 18px !important;
+}
+
+
+/*******************
+Labels
+*******************/
+
+.label {
+    font-size: 75% !important;
+}
+
+
+/*Badge*/
+
+.badge-xs {
+    font-size: 7px !important;
+}
+
+
+/*******************
+Buttons
+******************/
+
+.btn {
+    font-size: 12px !important;
+}
+
+.btn-lg {
+    font-size: 1.25rem !important;
+}
+
+.btn-circle.btn-sm {
+    font-size: 12px !important;
+}
+
+.btn-circle.btn-lg {
+    font-size: 16px !important;
+}
+
+.btn-circle.btn-xl {
+    font-size: 22px !important;
+}
+
+.btn-sm {
+    font-size: 10px !important;
+}
+
+.btn-xs {
+    font-size: 8px !important;
+}
+
+.btn-rounded.btn-sm {
+    font-size: 10px !important;
+}
+
+.btn-rounded.btn-xs {
+    font-size: 8px !important;
+}
+
+.checkbox label::after {
+    font-size: 9px !important;
+}
+
+
+/*******************
+File Upload 
+******************/
+
+.fileupload input.upload {
+    font-size: 18px !important;
+}
+
+.topbar .top-navbar .navbar-nav>.nav-item>.nav-link {
+    font-size: 15px !important;
+}
+
+.topbar .top-navbar .app-search input {
+    font-size: 12px !important;
+}
+
+.topbar .top-navbar .app-search .srh-btn {
+    font-size: 12px !important;
+}
+
+.topbar ul.dropdown-user li .dw-user-box .u-text p {
+    font-size: 12px !important;
+}
+
+
+/*******************
+ Breadcrumb and page title
+*******************/
+
+.page-titles .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    font-size: 12px !important;
+}
+
+.right-sidebar .rpanel-title {
+    font-size: 13px !important;
+}
+
+.right-sidebar .rpanel-title span {
+    font-size: 9px !important;
+}
+
+.chatonline li a span small {
+    font-size: 8px !important;
+}
+
+ul#themecolors li a.working:before {
+    font-size: 16px !important;
+}
+
+
+/*============================================================== 
+ Cards page
+ ============================================================== */
+
+.card-actions a {
+    font-size: 11px !important;
+}
+
+ul.list-icons li i {
+    font-size: 11px !important;
+}
+
+.percent {
+    font-size: 16px !important;
+}
+
+.percent:after {
+    font-size: 0.8em !important;
+}
+
+.round-overlap {
+    font-size: 33px !important;
+}
+
+
+/*============================================================== 
+File upload
+ ============================================================== */
+
+file>input {
+    font-size: 21px !important;
+}
+
+.floating-labels select.form-control>option {
+    font-size: 12px !important;
+}
+
+.floating-labels .form-control:focus~label,
+.floating-labels .form-control:valid~label {
+    font-size: 10px !important;
+}
+
+.floating-labels .input-lg~label,
+.floating-labels .input-lg {
+    font-size: 22px !important;
+}
+
+.floating-labels .input-sm~label,
+.floating-labels .input-sm {
+    font-size: 14px !important;
+}
+
+.icon-list-demo i {
+    font-size: 16px !important;
+}
+
+.icon-list-demo .div:hover i {
+    font-size: 2em !important;
+}
+
+
+/*******************
+Icon list material icon
+******************/
+
+.material-icon-list-demo .mdi {
+    font-size: 19px !important;
+}
+
+
+/*******************
+Gridstack Dragable portlet
+******************/
+
+.grid-stack-item-content {
+    font-size: 18px !important;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    font-size: 12px !important;
+}
+
+.timeline>li>.timeline-badge {
+    font-size: 1.4em !important;
+}
+
+
+/*******************
+session ideal timeout page
+******************/
+
+#idletimeout {
+    font-size: 10px !important;
+}
+
+
+/**************
+Stylish tooltip
+******************/
+
+.mytooltip:hover .tooltip-content2,
+.mytooltip:hover .tooltip-content2 i {
+    font-size: 16px !important;
+}
+
+.tooltip-content {
+    font-size: 12px !important;
+}
+
+.tooltip-text {
+    font-size: 12px !important;
+}
+
+.tooltip-content3 {
+    font-size: 12px !important;
+}
+
+.tooltip-content4 {
+    font-size: 12px !important;
+}
+
+.tooltip-content5 {
+    font-size: 18px !important;
+}
+
+.tooltip-content5 span {
+    display: block;
+}
+
+.error-body h1 {
+    font-size: 208px !important;
+}
+
+.gmaps-overlay {
+    font-size: 14px !important;
+}
+
+.search-listing li h3 {
+    font-size: 16px !important;
+}
+
+.pricing-body h2 {
+    font-size: 54px !important;
+}
+
+.pricing-body h2 span {
+    font-size: 13px !important;
+}
+
+.sidebar-footer a {
+    /*font-size: 18px;*/
+}
+
+.sidebar-nav ul li a {
+    font-size: 13px !important;
+}
+
+.sidebar-nav ul li.nav-small-cap {
+    font-size: 10px !important;
+}
+
+.sidebar-nav>ul>li>a i {
+    font-size: 19px !important;
+}
+
+.mailbox .message-center a .mail-contnet .mail-desc,
+.mailbox .message-center a .mail-contnet .time {
+    font-size: 10px !important;
+}
+
+
+/*******************
+/*Analytic info sparkline chart page*/
+
+
+/*******************/
+
+.analytics-info li span {
+    font-size: 22px !important;
+}
+
+.city-weather-days li i {
+    font-size: 18px !important;
+}
+
+.todo-list li .item-date {
+    font-size: 10px !important;
+}
+
+.chat-list li .chat-time {
+    font-size: 11px !important;
+}
+
+.message-box .message-widget a .mail-contnet .mail-desc,
+.message-box .message-widget a .mail-contnet .time {
+    font-size: 10px !important;
+}
+
+.fc-toolbar h2 {
+    font-size: 16px !important;
+}
+
+.fc th.fc-widget-header {
+    font-size: 11px !important;
+}
+
+.fc-text-arrow {
+    font-size: 14px !important;
+}
+
+.fc-event {
+    font-size: 11px !important;
+}
+
+.calendar-event a {
+    font-size: 8px !important;
+}
+
+.sl-date {
+    font-size: 8px !important;
+}
+
+.feeds li span {
+    font-size: 10px !important;
+}
+
+.social-widget .soc-header {
+    font-size: 34px !important;
+}
+
+.profiletimeline .sl-date {
+    font-size: 10px !important;
+}
+
+
+/*-- ============================================================== 
+ Phone and below ipad(767px) 
+ ============================================================== */
+
+@media (max-width: 767px) {
+    .error-body h1 {
+        font-size: 98px !important;
+    }
+}

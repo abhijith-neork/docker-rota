@@ -1,0 +1,2 @@
+ALTER TABLE `rotacloud`.`rota` 
+ADD COLUMN `published` BIGINT(20) NULL AFTER `created_user_id`;

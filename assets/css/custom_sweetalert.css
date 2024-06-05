@@ -1,0 +1,22 @@
+.sweet-alert {
+    box-sizing : border-box;
+    max-height : 100% !important;
+    overflow-y : auto !important;
+    padding : 0 17px 17px !important;
+    width : 512px;
+}
+.sweet-alert:before {
+    content : "";
+    display : block;
+    height : 17px;
+    width : 0;
+}
+.swal-wide{
+    width:600px !important;
+}
+.custom-swal-class {
+    overflow-x: visible;
+    overflow-y: visible;
+    max-height: 550px !important;
+    min-height: 550px !important;
+}

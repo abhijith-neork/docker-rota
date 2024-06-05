@@ -1,0 +1,4 @@
+ALTER TABLE `rotacloud`.`master_shift` 
+CHANGE COLUMN `start_time` `start_time` VARCHAR(10) NULL ,
+CHANGE COLUMN `end_time` `end_time` VARCHAR(10) NULL ;
+

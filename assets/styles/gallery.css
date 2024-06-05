@@ -1,0 +1,16 @@
+body .slick-lightbox .slick-prev {
+		left: -10%;
+	}
+	body .slick-lightbox .slick-next {
+		right: -10%;
+	}
+	@media only screen and (max-width: 750px){
+		body .slick-lightbox .slick-prev {
+			left: 8%;
+		}
+		body .slick-lightbox .slick-next {
+			right: 8%;
+		}
+	}
+
+	

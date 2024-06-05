@@ -1,0 +1,4 @@
+ALTER TABLE `rotacloud`.`master_shift` 
+CHANGE COLUMN `shift_shortcut` `shift_shortname` VARCHAR(20) NOT NULL AFTER `shift_name`,
+CHANGE COLUMN `end_time` `end_time` TIME NOT NULL AFTER `start_time`;
+

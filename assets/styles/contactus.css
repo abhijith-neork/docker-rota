@@ -1,0 +1,28 @@
+.contactus-wrapper {
+	margin: 63px 0 80px 0;
+	text-align: center;
+}
+.contactus-wrapper h2 {
+	color: #666666;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.contactus-wrapper p {
+	color: #666666;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+}
+.enquiry-contact {
+	padding-top: 30px;
+	margin-top: 50px;
+	display: inline-block;
+	border-top: 1px solid rgb(205, 205, 205);
+}
+.contactus-wrapper .enquiry-contact h2 {
+	margin-bottom: 10px;
+}

@@ -1,0 +1,2095 @@
+@font-face {
+    font-family:'Apercu';
+    src: url('../fonts/Apercu.otf');
+    font-weight: normal;
+}
+@font-face {
+    font-family:'ApercuRegular';
+    src: url('../fonts/apercu-regular-webfont.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family:'ApercuBold';
+    src: url('../fonts/Apercu-Bold.otf');
+    font-weight: normal;
+}
+@font-face {
+    font-family:'ApercuLight';
+    src: url('../fonts/Apercu-Light.otf');
+    font-weight: normal;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'ApercuRegular', sans-serif;
+    background-color: #f7f5f5;
+}
+legend
+{
+    border-bottom: 1px solid red;
+}
+ul,h1,h2,h3,h4,h5,h6,p,a,span{
+    margin: 0;
+    padding: 0;
+    font-family: 'ApercuRegular', sans-serif !important;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    border: none;
+    outline: none;
+}
+.clear {
+    clear: both;
+}
+.sf-wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.go-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    width: 38px;
+    display: none;
+    z-index: 1;
+}
+section {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+header.sf-header {
+    width: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.inner-container {
+    width: 100%;
+    max-width: 1066px;
+    margin: 0 auto;
+}
+img.top-band {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+a.sf-logo {
+    display: inline-block;
+    margin: 65px auto;
+}
+.header-menu {
+    width: 100%;
+    float: left;
+    border-top: 1px solid #cccccc;
+    background-color: #FFFFFF;
+    position: relative;
+    padding: 12px 0;
+}
+ul.header-menu-list {
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+ul.header-menu-list li {
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+    vertical-align: middle;
+}
+ul.header-menu-list li a{
+    color: #333333;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    position: relative;
+    text-decoration: none;
+}
+ul.header-menu-list li a:before {
+    content: '';
+    position: absolute;
+    top: -14px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0%;
+    height: 4px;
+    background-color: #004990;
+ -webkit-transition: all 0.3s;
+ -moz-transition: all 0.3s;
+ transition: all 0.3s;
+}
+ul.header-menu-list li.active a:before,
+ul.header-menu-list li:hover a:before {
+    width: 100%;
+}
+.banner-section {
+    margin-bottom: 100px;
+}
+.slick-initialized .slick-slide {
+    display: block;
+    outline: none;
+}
+/*celebrities slider*/
+.celebrities-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.86);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 9999;
+}
+.celebrities-slider-popup {
+    position: fixed;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.celebrities-slider-popup.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999999;
+}
+.celebrities-sliders-popup {
+    position: fixed;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.celebrities-sliders-popup.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999999;
+}
+.popup-header {
+    width: 100%;
+    max-width: 470px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+}
+.popup-headers {
+    width: 100%;
+    max-width: 836px;
+    margin: 0 auto;
+        margin-bottom: 0px;
+    margin-bottom: -3px;
+}
+.slider-caption {
+    position: relative;
+    color: #FFFFFF;
+}
+.celebrities-slider {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.celebrities-slider-popup .gallery-count {
+    position: relative;
+    top: 0;
+    right: 0px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: right;
+    float: right;
+}
+.celebrities-sliders-popup .gallery-count {
+    position: relative;
+    top: 0;
+    right: 0px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: right;
+    float: right;
+}
+.celebrities-slider-item {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.celebrities-slider-img {
+    position: relative;
+    width: 100%;
+    display: block;
+    max-width: 470px;
+    margin: 0 auto;
+}
+body .celebrities-slider-popup .slick-prev {
+    background: url(../images/celeb-prev.png);
+    width: 61px;
+    height: 61px;
+    z-index: 2;
+    left: 8%;
+    background-repeat: no-repeat;
+}
+body .celebrities-slider-popup .slick-prev:before,
+body .celebrities-slider-popup .slick-next:before {
+ display: none;
+}
+body .celebrities-slider-popup .slick-next {
+    background: url(../images/celeb-next.png);
+    width: 61px;
+    height: 61px;
+    z-index: 2;
+     right: 8%;
+    background-repeat: no-repeat;
+}
+body .celebrities-sliders-popup .slick-prev {
+    background: url(../images/celeb-prev.png);
+    width: 61px;
+    height: 61px;
+    z-index: 2;
+    left: -10%;
+    background-repeat: no-repeat;
+}
+body .celebrities-sliders-popup .slick-prev:before,
+body .celebrities-sliders-popup .slick-next:before {
+ display: none;
+}
+body .celebrities-sliders-popup .slick-next {
+    background: url(../images/celeb-next.png);
+    width: 61px;
+    height: 61px;
+    z-index: 2;
+     right: -10%;
+    background-repeat: no-repeat;
+}
+.celebrities-slider-close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    border: 2px solid #FFFFFF;
+    display: block;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    padding: 0;
+    outline: none;
+}
+.celebrities-slider-close:before {
+    font-family: "";
+    font-size: 30px;
+    font-weight: 700;
+    height: 30px;
+    width: 30px;
+    line-height: 24px;
+    color: white;
+    opacity: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: 'Ã—';
+}
+.customize-hampers {
+    display: none;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 8.484px;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 750px){
+    .celebrities-slider-popup {
+        padding: 0 20px;
+    }
+    .celebrities-slider-close {
+        top: 15px;
+    }
+    body .celebrities-slider-popup .slick-next {
+        right: 0;
+    }
+    body .celebrities-slider-popup .slick-prev {
+        left: 0;
+    }
+}
+@media only screen and (max-width: 750px){
+    .celebrities-sliders-popup {
+        padding: 0 20px;
+    }
+    .celebrities-slider-close {
+        top: 15px;
+    }
+    body .celebrities-sliders-popup .slick-next {
+        right: 0;
+    }
+    body .celebrities-sliders-popup .slick-prev {
+        left: 0;
+    }
+}
+/*end celebrities slider*/
+
+#home-page .banner-section .slick-next:hover {
+    -webkit-transform: translateX(7px);
+    transform: translateX(7px);
+}
+#home-page .banner-section .slick-prev:hover {
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+}
+#home-page .banner-section .slick-prev,
+#home-page .banner-section .slick-next {
+    width: 38px;
+    height: 38px;
+}
+   /* #home-page .banner-section .banner-image {
+        width: 100%;
+        transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    #home-page .banner-section .slick-active .banner-image {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        }*/
+        .banner-section .slick-next {
+            right: -60px;
+            z-index: 2;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        .anim-text.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            -webkit-transform: translateY(0);
+        }
+        .anim-text {
+            transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(50px);
+            -webkit-transform: translateY(50px);
+        }
+        .blockreveal.active::after {
+            -webkit-animation: secondaryImageOverlayIn 0.6s 0s, secondaryImageOverlayOut 0.6s 0.6s;
+            animation: secondaryImageOverlayIn 0.6s 0s, secondaryImageOverlayOut 0.6s 0.6s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        .blockreveal::after {
+            background-color: #6e2a54;
+        }
+        .blockreveal.active .animation-block {
+            -webkit-animation: fadeIn 0s 0.6s;
+            animation: fadeIn 0s 0.6s;
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+        }
+        .animation-block {
+            transform: scale(1);
+            transition: all 1.5s;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        .blockreveal.active {
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+            float: left;
+            width: 100%;
+        }
+        .blockreveal::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
+        }
+        #home-page .banner-section .slick-next:before {
+            content: '';
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            right: 0;
+            opacity: 1;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            background: url(../images/next-icon.png);
+        }
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @-webkit-keyframes secondaryImageOverlayIn {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        @keyframes secondaryImageOverlayIn {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        @-webkit-keyframes secondaryImageOverlayOut {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+            100% {
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+        }
+        @keyframes secondaryImageOverlayOut {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+            100% {
+                -webkit-transform: translateX(120%);
+                transform: translateX(120%);
+            }
+        }
+        #home-page .banner-section .slick-prev {
+            left: -60px;
+            z-index: 2;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        #home-page .banner-section .slick-prev:before {
+            content: '';
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            right: 0;
+            opacity: 1;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            background: url(../images/prev-icon.png);
+        }
+        .banner-section .slick-dots {
+            bottom: -45px;
+            left: 0;
+            width: 100%;
+        }
+        .banner-section .slick-dots li {
+            margin: 0 2px;
+        }
+        .banner-section .slick-dots li.slick-active button {
+            background-color: #194d8e;
+        }
+        .banner-section .slick-dots li button {
+            border-radius: 50%;
+            background-color: #999999;
+            width: 10px;
+            height: 10px;
+        }
+        .banner-section li button:before {
+            display: none;
+        }
+        .fullContainer {
+           position: relative;
+           width: 100%;
+           float: left;
+           text-align: center;
+       }
+       section.offers-section {
+           margin-bottom: 100px;
+       }
+       .offer-detail-card img {
+           display: block;
+           width: 100%;
+       }
+       .width50 {
+           width: 50%;
+           float: left;
+           position: relative;
+       }
+       .tablez-awards-section,
+       .celebrities-section {
+           margin-bottom: 100px;
+       }
+       .celebrities-section {
+        text-align: center;
+    }
+    img.celebrities-image {
+        width: 100%;
+        display: block;
+    }
+    .title-wrapper {
+        text-align: center;
+    }
+    .tablez-awards-section .title-wrapper {
+        margin: 0px 0px 120px 0px;
+        text-align: center;
+    }
+    h2.section-title {
+        color: #e11e25;
+        font-size: 40px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .title-border {
+        display: inline-block;
+        margin: 20px auto;
+        position: relative;
+        width: 340px;
+    }
+    .title-border:before,
+    .title-border:after {
+        content: '';
+        top: 50%;
+        height: 2px;
+        width: 130px;
+        position: absolute;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        background-color: rgb(205, 205, 205);
+    }
+    .title-border:before {
+        left: 0;
+    }
+    .title-border:after {
+        right: 0;
+    }
+    .title-border img {
+        display: block;
+        margin: 0 auto;
+    }
+    .celebrities-section .title-wrapper {
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    }
+    .celebrities-section .title-border {
+        margin: 30px auto;
+    }
+    .celebrities-card {
+        margin: 0;
+        width: 32%;
+        float: left;
+        margin-right: 2%;
+        cursor: pointer;
+        margin-top: 20px;
+        overflow: hidden;
+        position: relative;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .celebrities-card:nth-child(3n) {
+        margin-right: 0%;
+    }
+    .celebrities-card .blockreveal::after {
+        background-color: #cccccc;
+    }
+    .celebrities-card img.celebrities-image {
+        -webkit-transition: all 1.5s ease;
+        transition: all 1.5s ease;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .celebrities-card:hover img.celebrities-image {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    h2.celebrities-name {
+        color: #f4f3f3;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    h2.celebrities-name:after{
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-color: rgb(239, 19, 133);
+        width: 65px;
+        height: 4px;
+    }
+    p.celebrities-info {
+        color: #f4f3f3;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 17px;
+        padding: 0 40px;
+    }
+    .celebrities-gallery-card p.celebrities-info {
+        padding: 0 20px;
+    }
+    .celebrities-card .card-caption {
+        left: 0;
+        right: 0;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: center;
+        z-index: 2;
+        top: 50%;
+        position: absolute;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .celebrities-card .card-caption > span {
+        text-align: center;
+        color: #FFFFFF;
+        display: inline-block;
+        opacity: 0;
+        -webkit-transform: translate3d(0, 30px, 0);
+        transform: translate3d(0, 30px, 0);
+        -webkit-transition: -webkit-transform 0.5s, opacity 0.8s;
+        transition: transform 0.5s, opacity 0.8s;
+        -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    }
+    .celebrities-card:hover .card-caption > span {
+        opacity: 1;
+        color: #FFFFFF;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .celebrities-card:hover:before {
+        opacity: 1;
+        visibility: visible;
+    }
+    .celebrities-card:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.73);
+        top: 0;
+        left: 0;
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .header-menu-icon {
+        display: none;
+    }
+    .load-more {
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #999999;
+        background-color: rgba(255, 255, 255, 0);
+        width: 96px;
+        height: 96px;
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 30px;
+        color:  #999999;
+        font-size: 13px;
+        margin-top: 40px;
+        font-weight: 400;
+        cursor: pointer;
+        text-align: center;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    #load-more {
+    border-radius: 50%;
+border-style: solid;
+border-width: 1px;
+border-color: #999999;
+background-color: rgba(255, 255, 255, 0);
+width: 96px;
+height: 96px;
+display: inline-block;
+margin: 0 auto;
+    margin-top: 0px;
+text-align: center;
+padding-top: 30px;
+color: #999999;
+font-size: 13px;
+margin-top: 40px;
+font-weight: 400;
+cursor: pointer;
+text-align: center;
+-webkit-transition: all 0.3s;
+transition: all 0.3s;
+}
+    .load-more:hover {
+        background-color: #999999;
+        color: #FFFFFF;
+    }
+    /*END CONTENT*/
+    /*FOOTER*/
+    footer.sf-footer{
+        background-color: #231f20;
+        text-align: center; 
+    }
+    .footer-logo {
+        display: inline-block;
+        cursor: pointer;
+        margin: 50px auto;
+    }
+    .footer-band {
+        width: 100%;
+        display: block;
+    }
+    .footer-logo img {
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    p.footer-description {
+        
+        color: #666666;
+        font-size: 13px;
+        font-weight: 400;
+        max-width: 542px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .footer-social-menu {
+        text-align: center;
+        margin: 40px auto;
+    }
+    .footer-social-menu a {
+        display: inline-block;
+        margin: 0 25px;
+        text-decoration: none;
+    }
+    .footer-social-menu a img{
+        display: block;
+        width: auto;
+    }
+    p.copyrights {
+        text-align: center;
+        padding: 20px 0;
+        color: #2f2f2f;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    /*--location--*/
+    .map-wrapper {
+        min-height: 702px;
+    }
+    .sf-map {
+        position: relative;
+        float: left;
+        width: 100%;
+        min-height: 702px;
+        background: url(../images/sf-map.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .map-tooltip {
+        position: absolute;
+        top: -237px;
+        left: -220px;
+        width: 325px;
+        height: 244px;
+        background: url(../images/map-tooltip.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .location-marker {
+        cursor: pointer;
+    }
+    .location-marker-wrapper {
+        position: absolute;
+    }
+    .location-marker-wrapper.marker-one {
+        left: 54%;
+        top: 27%;
+    }
+    .map-tooltip {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+    }
+    .location-marker:hover + .map-tooltip {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+    }
+    .map-tooltip-content {
+        width: 100%;
+        padding: 25px;
+    }
+    .map-tooltip-content h2 {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        margin: 0px 0 3px 0px;
+        text-transform: uppercase;
+    }
+    .map-tooltip-content p {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        display: block;
+        width: 100%;
+        word-break :break-word;
+        float: left;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+    .location-marker-wrapper.marker-two {
+        left: 58%;
+        top: 28.2%;
+    }
+    .location-marker-wrapper.marker-three {
+        left: 31%;
+        top: 70%;
+    }
+    .marker-one .map-tooltip {
+        width: 325px;
+        left: -255px;
+    }
+    .marker-two .map-tooltip {
+        width: 335px;
+        left: -265px;
+    }
+    .marker-three .map-tooltip {
+        width: 310px;
+        left: -235px;
+    }
+    /*celebrities*/
+    .celebrities-gallery-card {
+        margin: 0;
+        width: 24.85%;
+        float: left;
+        margin-right: 0.2%;
+        cursor: pointer;
+        margin-top: 0.2%;
+        overflow: hidden;
+        position: relative;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: all 350ms ease;
+        transition: all 350ms ease;
+    }
+    .celebrities-gallery-wrapper {
+        margin: 63px 0;
+    }
+    body .slick-lightbox .slick-prev:before,
+    body .slick-lightbox .slick-next:before {
+        display: none;
+    }
+    body .slick-lightbox .slick-prev {
+        background: url(../images/celeb-prev.png);
+        width: 61px;
+        height: 61px;
+        z-index: 2;
+        left: -8%;
+        background-repeat: no-repeat;
+    }
+    body .slick-lightbox .slick-prev:hover,
+    body .slick-lightbox .slick-prev:focus{
+        background: url(../images/celeb-prev.png);
+    }
+    body .slick-lightbox-slick.slick-caption-dynamic{
+        max-width: 842px;
+        margin: 0 auto;
+        position: relative;
+    }
+    body .slick-lightbox .slick-next:hover,
+    body .slick-lightbox .slick-next:focus {
+        background: url(../images/celeb-next.png);
+    }
+    body .slick-lightbox .slick-next {
+        background: url(../images/celeb-next.png);
+        width: 61px;
+        height: 61px;
+        z-index: 2;
+        right: 8%;
+        background-repeat: no-repeat;
+    }
+    .gallery-count {
+        position: absolute;
+        top: -30px;
+        right: 0px;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: right;
+    }   
+    body .slick-lightbox-slick-caption {
+        margin: 10px 0 0;
+        color: #FFFFFF;
+        top: -30px;
+        position: absolute;
+        left: 0px;
+    } 
+    .slick-lightbox-close {
+        display: none !important;
+    }
+    .celebrities-gallery-wrapper .inner-container {
+        /*max-width: 974px;*/
+        /*text-align: center;*/
+    }
+    .celebrities-gallery-card .celebrities-image {
+        width: 100%;
+        display: block;
+    }
+    .celebrities-gallery-card:nth-child(4n) {
+        margin-right: 0%;
+    }
+    #retail-page .celebrities-gallery-card {
+        width: 32.99%;
+        margin-right: 0.3%;
+    }
+    #retail-page .celebrities-gallery-card:nth-child(3n) {
+        margin-right: 0%;
+    }
+    #retail-page .celebrities-gallery-card:nth-child(4n) {
+        margin-right: 0.3%;
+    }
+    .celebrities-gallery-card .blockreveal::after {
+        background-color: #cccccc;
+    }
+    .celebrities-gallery-card img.celebrities-image {
+        -webkit-transition: all 1.5s ease;
+        transition: all 1.5s ease;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    ul.header-menu-list li#location-menu a:before,
+    ul.header-menu-list li#location-menu.active a:before,
+    ul.header-menu-list li#location-menu:hover a:before {
+        background-color: #3ec07c;
+    }
+    .celebrities-gallery-card:hover img.celebrities-image {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    ul.alphabetic-filter li{
+        display: inline-block;
+        margin: 0 3px;
+        padding: 8px;
+        border-radius: 50px;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        color: #666666;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 8.484px;
+        text-align: center;
+        cursor: pointer;
+        background-color: transparent;
+    }
+  
+    ul.category-filter {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    ul.category-filter li {
+        display: inline-block;
+        margin: 0 5px;
+        padding: 11px 20px;
+        border-radius: 50px;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        color: #666666;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 8.484px;
+        text-align: center;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    .scale-anm {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+  }
+  input.celebrities-search {
+    border: 1px solid #999999;
+    background-color: rgba(130, 0, 5, 0);
+    width: 100%;
+    height: 38px;
+    outline: none;
+    color: #666666;
+    border-radius: 50px;
+    padding: 10px 10px 10px 25px;
+    margin-bottom: 50px;
+    max-width: 100%;
+}
+
+ul.alphabetic-filter li:hover,
+ul.alphabetic-filter li.active 
+{
+    background-color: #ef1a84; 
+    font-weight: 700;
+    color: white;
+}
+ 
+ a.celeb:hover{
+    background-color: #ef1a84; 
+    font-weight: 700;
+    color: white;
+}
+
+ul.category-filter li:hover,
+ul.category-filter li.active
+ {
+    background-color: #ff7900;
+    color: white; 
+}
+ul.alphabetic-filter {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+/*gallery*/
+.celebrities-gallery-card a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.73);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.celebrities-gallery-card .card-caption {
+    left: 0;
+    right: 0;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    z-index: 2;
+    top: 50%;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.celebrities-gallery-card:hover .card-caption {
+    left: 0;
+    right: 0;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    z-index: 2;
+    top: 50%;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.celebrities-gallery-card:hover .card-caption > span {
+    text-align: center;
+    color: #FFFFFF;
+    display: inline-block;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.8s;
+    transition: transform 0.5s, opacity 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.celebrities-gallery-card .card-caption > span {
+    text-align: center;
+    color: #FFFFFF;
+    display: inline-block;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.8s;
+    transition: transform 0.5s, opacity 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.celebrities-gallery-card:hover a:before {
+    opacity: 1;
+    visibility: visible;
+}
+#celebrities-page h2.celebrities-name:after {
+    width: 40px;
+}
+a.thumbnail {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.celebrities-gallery-card h2.celebrities-name:after {
+    max-width: 45px;
+}
+#gallery-page ul.category-filter li:hover,
+#gallery-page ul.category-filter li.active {
+    background-color: #9f218b;
+}
+#gallery-page .celebrities-gallery-card {
+    width: 32.99%;
+    margin-right: 0.3%;
+    margin-top: 0.3%;
+}
+#gallery-page .celebrities-gallery-card h2.celebrities-name:after {
+    max-width: 42px;
+}
+#gallery-page .celebrities-gallery-card:nth-child(3n) {
+    margin-right: 0%;
+}
+#gallery-page .celebrities-gallery-card:nth-child(4n) {
+    margin-right: 0.3%;
+}
+ul.header-menu-list li#gallery-menu a:before,
+ul.header-menu-list li#gallery-menu:hover a:before,
+ul.header-menu-list li#gallery-menu.active a:before {
+    background-color: #9f218b;
+}
+ul.header-menu-list li#contactus-menu a:before,
+ul.header-menu-list li#contactus-menu:hover a:before,
+ul.header-menu-list li#contactus-menu.active a:before {
+    background-color: #231f20;
+}
+ul.header-menu-list li#reservation-menu a:before,
+ul.header-menu-list li#reservation-menu:hover a:before,
+ul.header-menu-list li#reservation-menu.active a:before {
+ background-color:  #e31b23;
+}
+ul.header-menu-list li#orderonline-menu a:before,
+ul.header-menu-list li#orderonline-menu:hover a:before,
+ul.header-menu-list li#orderonline-menu.active a:before {
+    background-color: #ff6600;
+}
+/*retail*/
+ul.header-menu-list li#retail-menu a:before,
+ul.header-menu-list li#retail-menu:hover a:before,
+ul.header-menu-list li#retail-menu.active a:before {
+    background-color: #ff7800;
+}
+ul.header-menu-list li#celebrities-menu a:before,
+ul.header-menu-list li#celebrities-menu:hover a:before,
+ul.header-menu-list li#celebrities-menu.active a:before  {
+    background-color: #ef1a84;
+}
+ul.header-menu-list li#menu-menu a:before,
+ul.header-menu-list li#menu-menu:hover a:before,
+ul.header-menu-list li#menu-menu.active a:before  {
+    background-color: #de1b23;
+}
+/*parties*/
+#parties-page .content-wrapper .inner-container {
+    max-width: 778px;
+    margin: 0 auto;
+}
+ul.header-menu-list li#parties-menu a:before,
+ul.header-menu-list li#parties-menu:hover a:before,
+ul.header-menu-list li#parties-menu.active a:before  {
+    background-color: #009966;
+}
+.form-title {
+    color: #666666;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-info {
+    margin: 63px 0 70px 0;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #686868;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    position: relative;
+}
+.form-info:after{
+    background-color: #b1b1b1;
+    width: 182px;
+    height: 2px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.contactus-form {
+    margin-bottom: 150px;
+    float: left;
+    width: 100%;
+}
+.custom_form_label {
+    position: relative;
+    float: left;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    margin-bottom: 70px;
+}
+input.form_input_field,textarea.form_input_field {
+    padding: 0.5em 1em 0.5em 0em;
+    border: none;
+    display: block;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(153, 153, 153) !important;
+    border-color: inherit;
+    font-weight: 400;
+    color: #666666;
+    width: 100%;
+    margin-top: 0px;
+    outline: none;
+    font-size: 16px;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+    -webkit-transition: all 0.4s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.4s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 98%, #666666 4%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 98%, #666666 4%);
+    background-position: -2000px 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    font-family: 'ApercuRegular', sans-serif;
+}
+input.form_input_field:focus{
+    box-shadow: none;
+    outline: none;
+    background-position: 100% 100%;
+}
+textarea.form_input_field:focus {
+    box-shadow: none;
+    outline: none;
+    background-position: 100% 1px;
+}
+.custom_form_label .input_placeholder {
+    font-family: 'ApercuRegular', sans-serif;
+    color: #666666;
+    font-size: 16px;
+    font-style: italic;
+    top: 5px;
+    left: 0px;
+    position: absolute;
+    pointer-events: none;
+    font-weight: 400;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.contactus-form-section .custom_form_label .input_placeholder {
+    color: #333333;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #333333;
+    -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.form_input_field.input-valid ~ .input_placeholder,
+.form_input_field:focus ~ .input_placeholder {
+    top: -11px;
+    opacity: 1;
+    font-size: 12px;
+}
+div.input_error {
+    position: relative;
+    font-size: 13px;
+    color: #fa7559;
+    text-align: left;
+    float: left;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+label.custom_form_label.location-label,
+label.custom_form_label.date-label,
+label.custom_form_label.guest-label,
+label.custom_form_label.name-label,
+label.custom_form_label.phone-label,
+label.custom_form_label.email-label {
+    width: 30%;
+}
+label.custom_form_label.date-label,
+label.custom_form_label.phone-label {
+    margin: 0 5% 45px 5%;
+}
+textarea.form_input_field {
+    height: 125px;
+    resize: none;
+}
+.submit_button {
+    border-radius: 20px;
+    background-color: #009966;
+    width: 148px;
+    height: 37px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    text-transform: uppercase;
+    padding: 0 25px 0 25px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+}
+button.submit_button:hover {
+ background-color: #666666;
+ transform: translateY(-1px);
+ -webkit-transform: translateY(0px);
+ box-shadow: 0 8px 8px rgba(0,0,0,0.2);
+}
+.dropdown-wrapper{
+    width: 100%;
+}
+.dropdown-wrapper .ae-select {
+    padding: 8px 0;
+    position: relative;
+    border-bottom: 1px solid #999999;
+    height: 36px;
+}
+.dropdown-wrapper .ae-select.chosen {
+    color: #FFFFFF;
+}
+span.ae-select-content {
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    font-style: italic;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    padding-right: 30px;
+}
+.dropdown-wrapper .ae-select .down-icon, .ae-select .up-icon {
+    position: absolute;
+    right: 8px;
+    top: 13px;
+    background: url("../images/dropdown-arrow.png");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 10px;
+}
+
+.dropdown-wrapper .ae-dropdown .dropdown-menu {
+    background: #fffef3;
+    box-shadow: none;
+    border-radius: 0px;
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1;
+    top: 100%;
+    padding: 5px;
+    border: 1px solid #999999;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.2);
+}
+.dropdown-wrapper .ae-dropdown .ae-select,
+.dropdown-wrapper .ae-dropdown .dropdown-menu>li {
+    cursor: pointer;
+    font-size: 14px;
+}
+.dropdown-wrapper .ae-dropdown .dropdown-menu>li>a:focus,
+.dropdown-wrapper .ae-dropdown .dropdown-menu>li>a:hover {
+    background: none;
+}
+.dropdown-wrapper .ae-disabled{
+    pointer-events: none;
+}
+.ae-hide{
+    display:none;
+}
+ul.dropdown-menu{
+    list-style-type: none;
+}
+ul.dropdown-menu{
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #ccc;
+}
+ul.dropdown-menu li {
+    padding: 7px 15px;
+    margin-bottom: 2px;
+}
+ul.dropdown-menu li:hover,
+ul.dropdown-menu li.selected {
+    background-color: #019966;
+    border-radius: 50px;
+    color: #FFFFFF;
+}
+@media only screen and (max-width: 1100px){
+    .inner-container {
+        padding: 0 20px;
+    }
+    .form-info br {
+        display: none;
+    }
+    ul.header-menu-list li {
+        margin: 0px 12px;
+    }
+    ul.alphabetic-filter,
+    input.celebrities-search {
+        max-width: 100%;
+    }
+    ul.alphabetic-filter li {
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 750px) and (max-width: 900px){
+    ul.header-menu-list li {
+        margin: 0px 5px;
+    }
+    ul.header-menu-list li a {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 750px){
+    .go-to-top {
+        right: 5px;
+        bottom: 5px;
+        width: 30px;
+    }
+    ul.alphabetic-filter li {
+        margin: 0;
+        margin-bottom: 5px;
+        float: left;
+    }
+    .slick-lightbox-inner .slick-initialized .slick-slide {
+        display: block;
+        height: auto !important;
+    }
+    ul.alphabetic-filter {
+        float: left;
+        width: 100%;
+    }
+    .celebrities-gallery-wrapper {
+        margin: 20px 0 40px 0;
+    }
+    body .slick-lightbox-slick.slick-caption-dynamic {
+        padding: 0 20px;
+    }
+    .celebrities-gallery-card {
+        width: 100%;
+        margin: 0 0 5px 0 !important;
+    }
+    .form-info {
+        font-size: 16px;
+    }
+    .banner-section .slick-prev, .banner-section .slick-next {
+        display: none !important;
+    }
+    h2.section-title {
+        font-size: 24px;
+    }
+    .tablez-awards-section .title-wrapper {
+        margin: 0px 0px 10px 0px;
+    }
+    section.offers-section,
+    .tablez-awards-section,
+    .celebrities-section {
+        margin-bottom: 60px;
+    }
+    ul.header-menu-list li {
+        margin: 0px 12px;
+    }
+    ul.header-menu-list li a {
+        font-size: 13px;
+    }
+    a.sf-logo {
+        margin: 40px auto;
+    }
+    a.sf-logo img {
+        width: 120px;
+    }
+    /*retail*/
+    ul.category-filter {
+        float: left;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    ul.category-filter li {
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 0;
+        padding: 11px 12px;
+    }
+
+    .slick-lightbox-inner .slick-list.draggable {
+        margin-top: 90px;
+    }
+    #retail-page .celebrities-gallery-card {
+        width: 100%;
+        margin: 0 0 5px 0 !important;
+    }
+    #gallery-page .celebrities-gallery-card {
+        width: 100%;
+        margin: 0 0 5px 0 !important;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 750px){
+    ul.header-menu-list li {
+        margin: 0px 5px;
+    }
+    ul.header-menu-list li a {
+        font-size: 10px;
+    }
+    ul.header-menu-list li a:before {
+        top: -17px;
+    }
+    label.custom_form_label.location-label,
+    label.custom_form_label.date-label,
+    label.custom_form_label.guest-label,
+    label.custom_form_label.name-label,
+    label.custom_form_label.phone-label,
+    label.custom_form_label.email-label {
+        width: 47%;
+        margin: 0 0% 70px 0%;
+    }
+    label.custom_form_label.date-label, label.custom_form_label.name-label, label.custom_form_label.email-label {
+        margin: 0 0% 70px 5%;
+    }
+}
+@media only screen and (max-width: 500px){
+    label.custom_form_label.date-label,label.custom_form_label.phone-label,
+    label.custom_form_label.guest-label,
+    label.custom_form_label.email-label,
+    label.custom_form_label.name-label {
+        width: 100%;
+        margin: 0 0 40px 0;
+    }
+    .form-info {
+        margin: 35px 0 60px 0;
+    }
+    .contactus-form {
+        margin-bottom: 50px;
+    }
+    label.custom_form_label {
+        margin: 0 0 40px 0;
+    }
+    label.custom_form_label.location-label, label.custom_form_label.date-label, label.custom_form_label.guest-label, label.custom_form_label.name-label, label.custom_form_label.phone-label, label.custom_form_label.email-label {
+        width: 100%;
+    }
+    .header-menu {
+        display: none;
+    }
+    a.sf-logo {
+        margin: 20px auto;
+    }
+    .banner-section .slick-dots li button {
+        margin: 0 auto;
+    }
+    .width50 {
+        width: 100%;
+    }
+    .anim-text {
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+    }
+    .banner-section {
+        margin-bottom: 50px;
+    }
+    .title-border {
+        margin: 40px auto 45px auto;
+        width: 230px;
+    }
+    .title-border:before, .title-border:after {
+        width: 80px;
+    }
+    .celebrities-card {
+        width: 100%;
+        margin-right: 0;
+    }
+    .header-menu-icon {
+        width: 34px;
+        height: 22px;
+        float: right;
+        display: block;
+        position: fixed;
+        background-color: transparent;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        z-index: 9999;
+        top: 20px;
+        right: 20px;
+    }
+    .header-menu-icon span:nth-child(1) {
+        top: 2px;
+    }
+    .header-menu-icon span:nth-child(2) {
+        top: 11px;
+    }
+    .header-menu-icon span:nth-child(3) {
+        top: 20px;
+    }
+    .header-menu-icon span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 34px;
+        background: #FFFFFF;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+    .header-menu-icon.open span {
+        background-color: #333333;
+    }
+    .header-menu-icon.open span:nth-child(1) {
+        top: 11px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    .header-menu-icon.open span:nth-child(2) {
+        opacity: 0;
+        left: -30px;
+        -webkit-transition: .10s ease-in-out;
+        -moz-transition: .10s ease-in-out;
+        -o-transition: .10s ease-in-out;
+        transition: .10s ease-in-out;
+    }
+    .header-menu-icon.open span:nth-child(3) {
+        top: 11px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+    .header-menu.active {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        box-shadow: 0px 11px 30.08px 1.92px rgba(0, 0, 0, 0.13);
+    }
+    .mobile-header {
+        position: fixed;
+        top: 0;
+        background-color: #333333;
+        width: 100%;
+        height: 65px;
+        z-index: 4;
+    }
+    .header-menu {
+        position: fixed;
+        right: 0;
+        background-color: #FFFFFF;
+        width: 100%;
+        top: 0;
+        height: 100vh;
+        padding: 80px;
+        z-index: 8;
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+    }
+    ul.header-menu-list li {
+        margin: 0px;
+        width: 100%;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+    ul.header-menu-list li a {
+        width: auto;
+        position: relative;
+        text-align: center;
+        font-size: 17px;
+        display: inline-block;
+        padding: 0 7px;
+    }
+    ul.header-menu-list li a:before {
+        content: '';
+        position: absolute;
+        top: auto;
+        bottom: -7px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 0%;
+        height: 4px;
+        background-color: #004990;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    ul.header-menu-list li.active a:before,
+    ul.header-menu-list li:hover a:before {
+        width: 100%;
+    }
+    img.top-band {
+        top: 0;
+        position: fixed;
+        z-index: 9;
+        height: 5px;
+    }
+    .footer-band {
+        height: 5px;
+    }
+    .content-wrapper {
+        margin-top: 70px;
+    }
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+ .sf-map {
+     background-size: 768px 500px;
+     min-height: 500px;
+     background-position: center;
+ }
+ .location-marker-wrapper.marker-one {
+     top: 45%;
+     left: 38%;
+     z-index: 2;
+ }
+ .location-duck-outer2 {
+     z-index: 1;
+ }
+ .location-marker-wrapper.marker-two {
+     left: 60%;
+     top: 47.3%;
+ }
+ .map-wrapper {
+     min-height: unset;
+ }
+ .map-tooltip {
+     position: absolute;
+     top: -188px;
+     left: -139px;
+     width: 200px;
+     height: 198px;
+ }
+ .map-tooltip-content p {
+     color: #ffffff;
+     font-size: 12px;
+     font-weight: 400;
+     text-align: left;
+     display: block;
+     width: 100%;
+     float: left;
+     margin-bottom: 15px;
+ }
+ .map-tooltip-content h2 {
+     color: #ffffff;
+     font-size: 12px;
+     font-weight: 500;
+     line-height: 24px;
+     text-align: left;
+     margin: 3px 0 3px 0px;
+     text-transform: uppercase;
+ }
+ .map-tooltip-content {
+     width: 100%;
+     padding: 0px 25px;
+ }
+ .map-tooltip-content {
+     width: 100%;
+     padding: 12px 0px 25px 25px;
+ }
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .sf-map {
+        background-size: 768px 502px;
+        min-height: 500px;
+        background-position: center;
+    }
+    .location-marker-wrapper.marker-one {
+        top: 24.2%;
+        left: 57%;
+        z-index: 2;
+    }
+    .location-duck-outer2 {
+     z-index: 1;
+ }
+ .location-marker-wrapper.marker-two {
+    left: 67%;
+    top: 27%;
+}
+.location-marker-wrapper.marker-three {
+    left: 6%;
+    top: 67.4%;
+}
+.marker-two .map-tooltip {
+    width: 290px;
+    left: -225px;
+}
+.marker-one .map-tooltip {
+    width: 270px;
+    left: -209px;
+}
+.location-marker-wrapper.marker-three .map-tooltip {
+    position: absolute;
+    top: -211px;
+    left: -6px;
+    width: 260px;
+    height: 217px;
+    z-index: 15;
+    transform: rotateY(180deg) translateY(-20px);
+    -webkit-transform: rotateY(180deg) translateY(-20px);
+}
+.location-marker-wrapper.marker-three .location-marker:hover + .map-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: rotateY(180deg) translateY(0px);
+    -webkit-transform: rotateY(180deg) translateY(0px);
+}
+.map-wrapper {
+ min-height: unset;
+}
+.map-tooltip {
+    position: absolute;
+    top: -215px;
+    left: -185px;
+    width: 245px;
+    height: 220px;
+}
+.map-tooltip-content p {
+ color: #ffffff;
+ font-size: 12px;
+ font-weight: 400;
+ text-align: left;
+ display: block;
+ width: 100%;
+ float: left;
+ line-height: 20px;
+ margin-bottom: 15px;
+}
+.map-tooltip-content h2 {
+ color: #ffffff;
+ font-size: 12px;
+ font-weight: 500;
+ line-height: 24px;
+ text-align: left;
+ margin: 3px 0 3px 0px;
+ text-transform: uppercase;
+}
+.map-tooltip-content {
+ width: 100%;
+ padding: 0px 25px;
+}
+.map-tooltip-content {
+    width: 100%;
+    padding: 12px 0px 25px 20px;
+    position: relative;
+    float: left;
+}
+.location-marker-wrapper.marker-three .map-tooltip-content {
+    position: absolute;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    height: 100%;
+}
+}
+/*-------------------Kannan---------------------------------------*/
+
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#26262c;
+  display:none;
+}  
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:440px;
+  height:850px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+  border-radius: 5px;
+  text-align: center;
+}
+#boxes #dialog {
+  width:450px; 
+  height:auto;
+  padding: 10px 10px 10px 10px;
+  font-size: 15pt;
+}
+
+.agree:hover{
+  background-color: #D1D1D1;
+}
+.popupoption:hover{
+    background-color:#D1D1D1;
+    color: green;
+}
+.popupoption2:hover{
+    color: red;
+}
+.footer-social-menu.logo-continar a {
+    margin: 0px;
+}
+.footer-social-menu.logo-continar {
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-left: -8px;
+}
+.inner-wrapper
+{
+    background-color: #f3f3f3;
+}
